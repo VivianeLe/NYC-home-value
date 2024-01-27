@@ -17,7 +17,7 @@ def encode_cols(df: pd.DataFrame, categorical_cols: List[str] = None, numerical_
     
     return df
 
-def load_preprocessor(path: str):
+def load_preprocessor(path):
     with open(path, "rb") as f:
-        loaded_obj = pickle.load(f)
-    return loaded_obj
+        preprocessor = pickle.load(f)
+    return preprocessor
