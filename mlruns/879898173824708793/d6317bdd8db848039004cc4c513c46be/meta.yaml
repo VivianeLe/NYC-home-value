@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/viviane/Desktop/MLOps/NYC-home-value/mlruns/879898173824708793/d6317bdd8db848039004cc4c513c46be/artifacts
+end_time: 1706373069546
+entry_point_name: ''
+experiment_id: '879898173824708793'
+lifecycle_stage: active
+run_id: d6317bdd8db848039004cc4c513c46be
+run_name: suave-dove-874
+run_uuid: d6317bdd8db848039004cc4c513c46be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706373063631
+status: 3
+tags: []
+user_id: viviane

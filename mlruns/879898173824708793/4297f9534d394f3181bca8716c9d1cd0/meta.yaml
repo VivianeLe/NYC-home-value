@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/viviane/Desktop/MLOps/NYC-home-value/mlruns/879898173824708793/4297f9534d394f3181bca8716c9d1cd0/artifacts
+end_time: 1706373361280
+entry_point_name: ''
+experiment_id: '879898173824708793'
+lifecycle_stage: active
+run_id: 4297f9534d394f3181bca8716c9d1cd0
+run_name: shivering-gnu-447
+run_uuid: 4297f9534d394f3181bca8716c9d1cd0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706373360536
+status: 4
+tags: []
+user_id: viviane
