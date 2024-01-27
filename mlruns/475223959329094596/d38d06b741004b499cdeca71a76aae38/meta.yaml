@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/viviane/Desktop/MLOps/NYC-home-value/mlruns/475223959329094596/d38d06b741004b499cdeca71a76aae38/artifacts
+end_time: 1706393805790
+entry_point_name: ''
+experiment_id: '475223959329094596'
+lifecycle_stage: active
+run_id: d38d06b741004b499cdeca71a76aae38
+run_name: bemused-mole-694
+run_uuid: d38d06b741004b499cdeca71a76aae38
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706393786624
+status: 3
+tags: []
+user_id: viviane

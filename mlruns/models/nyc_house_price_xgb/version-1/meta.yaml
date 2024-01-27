@@ -1,12 +1,12 @@
 aliases: []
-creation_timestamp: 1706312168234
-current_stage: None
+creation_timestamp: 1706393754589
+current_stage: Production
 description: null
-last_updated_timestamp: 1706312168234
+last_updated_timestamp: 1706394148585
 name: nyc_house_price_xgb
-run_id: 6b0028f7e7704d8eafdf21d73cf6af22
+run_id: ffb0877c87f74cce99303e75fd3f2583
 run_link: null
-source: file:///Users/viviane/Desktop/MLOps/NYC-home-value/mlruns/879898173824708793/6b0028f7e7704d8eafdf21d73cf6af22/artifacts/model
+source: file:///Users/viviane/Desktop/MLOps/NYC-home-value/mlruns/578894006709759806/ffb0877c87f74cce99303e75fd3f2583/artifacts/model
 status: READY
 status_message: null
 user_id: null

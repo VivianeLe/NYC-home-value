@@ -1,12 +1,12 @@
 aliases: []
-creation_timestamp: 1706311630262
+creation_timestamp: 1706393805784
 current_stage: None
 description: null
-last_updated_timestamp: 1706311630262
+last_updated_timestamp: 1706393805784
 name: nyc_house_price_randomforest
-run_id: 132f6fa1dbcc49e498754935522feea5
+run_id: d38d06b741004b499cdeca71a76aae38
 run_link: null
-source: file:///Users/viviane/Desktop/MLOps/NYC-home-value/mlruns/686346702712954572/132f6fa1dbcc49e498754935522feea5/artifacts/model
+source: file:///Users/viviane/Desktop/MLOps/NYC-home-value/mlruns/475223959329094596/d38d06b741004b499cdeca71a76aae38/artifacts/model
 status: READY
 status_message: null
 user_id: null
