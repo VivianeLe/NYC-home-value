@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel
-from preprocessing import encode_categorical_cols, load_preprocessor
+from preprocessing import encode_cols, load_preprocessor
 from lib.modeling import get_model
 from sklearn.feature_extraction import DictVectorizer
 from typing import List
