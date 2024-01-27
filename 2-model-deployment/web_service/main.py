@@ -31,7 +31,7 @@ def run_inference(user_input: List[InputData], dv: DictVectorizer, model: BaseEs
 
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to the Inference API!"}
+    return {"message": "Welcome to the NYC Home value prediction!"}
 
 @app.post("/predict_duration")
 def predict_duration_route(payload: InputData):
