@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/viviane/Desktop/MLOps/NYC-home-value/mlruns/686346702712954572/6be088598fd44ec5ad2e75f55f866014/artifacts
+end_time: 1706345213575
+entry_point_name: ''
+experiment_id: '686346702712954572'
+lifecycle_stage: active
+run_id: 6be088598fd44ec5ad2e75f55f866014
+run_name: caring-hen-454
+run_uuid: 6be088598fd44ec5ad2e75f55f866014
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706345199593
+status: 3
+tags: []
+user_id: viviane

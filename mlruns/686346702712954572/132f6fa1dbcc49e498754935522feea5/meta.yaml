@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/viviane/Desktop/MLOps/NYC-home-value/mlruns/686346702712954572/132f6fa1dbcc49e498754935522feea5/artifacts
+end_time: 1706311630265
+entry_point_name: ''
+experiment_id: '686346702712954572'
+lifecycle_stage: active
+run_id: 132f6fa1dbcc49e498754935522feea5
+run_name: colorful-doe-752
+run_uuid: 132f6fa1dbcc49e498754935522feea5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706311620386
+status: 3
+tags: []
+user_id: viviane

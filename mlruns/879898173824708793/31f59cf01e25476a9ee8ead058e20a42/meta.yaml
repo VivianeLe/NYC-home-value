@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/viviane/Desktop/MLOps/NYC-home-value/mlruns/879898173824708793/31f59cf01e25476a9ee8ead058e20a42/artifacts
+end_time: 1706343193571
+entry_point_name: ''
+experiment_id: '879898173824708793'
+lifecycle_stage: active
+run_id: 31f59cf01e25476a9ee8ead058e20a42
+run_name: bouncy-hawk-872
+run_uuid: 31f59cf01e25476a9ee8ead058e20a42
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706343188962
+status: 3
+tags: []
+user_id: viviane

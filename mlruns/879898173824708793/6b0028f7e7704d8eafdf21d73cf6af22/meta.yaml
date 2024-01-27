@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/viviane/Desktop/MLOps/NYC-home-value/mlruns/879898173824708793/6b0028f7e7704d8eafdf21d73cf6af22/artifacts
+end_time: 1706312168238
+entry_point_name: ''
+experiment_id: '879898173824708793'
+lifecycle_stage: active
+run_id: 6b0028f7e7704d8eafdf21d73cf6af22
+run_name: clean-goat-404
+run_uuid: 6b0028f7e7704d8eafdf21d73cf6af22
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706312164660
+status: 3
+tags: []
+user_id: viviane
