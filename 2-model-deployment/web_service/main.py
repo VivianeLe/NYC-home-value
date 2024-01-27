@@ -1,13 +1,13 @@
 from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel
-from lib.preprocessing import encode_categorical_cols, load_preprocessor
-from lib.models import get_model
+from preprocessing import encode_categorical_cols, load_preprocessor
+from lib.modeling import get_model
 from sklearn.feature_extraction import DictVectorizer
 from typing import List
 import numpy as np
 import pandas as pd
 from sklearn.base import BaseEstimator
-from app_config import PATH_TO_PREPROCESSOR, PATH_TO_MODEL, CATEGORICAL_COLS, NUMERICAL_COLS
+from config import PATH_TO_PREPROCESSOR, PATH_TO_MODEL, CATEGORICAL_COLS, NUMERICAL_COLS
 
 
 app = FastAPI()
