@@ -1,6 +1,6 @@
 # MODELS
 MODEL_VERSION = "0.0.1"
-MODEL_TYPE = "ensemble"
+MODEL_TYPE = "xgb"
 PATH_TO_PREPROCESSOR = f"C:\Git\Project-1\NYC-home-value\saved_pkl\dv\{MODEL_TYPE}-{MODEL_VERSION}.pkl"
 PATH_TO_MODEL = f"C:\Git\Project-1\NYC-home-value\saved_pkl\model_v\{MODEL_TYPE}-{MODEL_VERSION}.pkl"
 CATEGORICAL_COLS = ["NEIGHBORHOOD", "building_category", "building_class"]
