@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/viviane/Desktop/MLOps/NYC-home-value/mlruns/624000600208382101/18c21d2dbce44f2399b4b3cc22ad0a34/artifacts
+deleted_time: 1706345341013
+end_time: 1706344569743
+entry_point_name: ''
+experiment_id: '624000600208382101'
+lifecycle_stage: deleted
+run_id: 18c21d2dbce44f2399b4b3cc22ad0a34
+run_name: persistent-perch-260
+run_uuid: 18c21d2dbce44f2399b4b3cc22ad0a34
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706344560966
+status: 4
+tags: []
+user_id: viviane
