@@ -23,7 +23,7 @@ with open("config.py", "r") as config_file:
 
 def run_inference(user_input: List[InputData], dv: DictVectorizer, model: BaseEstimator) -> np.ndarray:
     df = pd.DataFrame([x.dict() for x in user_input])
-    df = encode_categorical_cols(df)
+    df = encode_cols(df)
     dicts = df[CATEGORICAL_COLS].to_dict(orient="records")
     X = dv.transform(dicts)
     y = model.predict(X)
