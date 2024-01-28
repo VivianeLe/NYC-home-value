@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/viviane/Desktop/MLOps/NYC-home-value/mlruns/475223959329094596/45c56620e2324c4da13dcc86f854ee19/artifacts
+end_time: 1706459024833
+entry_point_name: ''
+experiment_id: '475223959329094596'
+lifecycle_stage: active
+run_id: 45c56620e2324c4da13dcc86f854ee19
+run_name: amusing-slug-659
+run_uuid: 45c56620e2324c4da13dcc86f854ee19
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706459007757
+status: 3
+tags: []
+user_id: viviane

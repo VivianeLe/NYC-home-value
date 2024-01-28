@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/viviane/Desktop/MLOps/NYC-home-value/mlruns/578894006709759806/47b2bd00c49a4bbeafa5dfc16abac4eb/artifacts
+end_time: 1706458999097
+entry_point_name: ''
+experiment_id: '578894006709759806'
+lifecycle_stage: active
+run_id: 47b2bd00c49a4bbeafa5dfc16abac4eb
+run_name: enthused-lark-714
+run_uuid: 47b2bd00c49a4bbeafa5dfc16abac4eb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706458993229
+status: 3
+tags: []
+user_id: viviane
