@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from preprocessing import encode_cols
-from modeling import load_pickle
+from lib.preprocessing import encode_cols
+from lib.modeling import load_pickle
 from sklearn.feature_extraction import DictVectorizer
 from typing import List
 import numpy as np
@@ -36,9 +36,11 @@ def read_root():
     return {"message": "This is NYC House Price Prediction App"}
 
 @app.post("/predict_house_price")
-def predict_house_price_route(payload: InputData):
+def predict_house_price(payload: InputData):
     dv = load_pickle(PATH_TO_PREPROCESSOR)
     model = load_pickle(PATH_TO_MODEL)
     y = run_inference([payload], dv, model)
     result = f"Predicted house price: {round(y[0]):,.0f} USD"
     return {result}
+
+#uvicorn main:app --reload

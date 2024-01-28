@@ -1,6 +1,6 @@
-from pickle import load
+import pickle
 
-def load_pickle(model_path: str):
-    with open(model_path, 'rb') as f:
-        pkl_file = load(f)
-    return pkl_file
+def load_pickle(path):
+    with open(path, "rb") as f:
+        file = pickle.load(f)
+    return file

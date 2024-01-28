@@ -5,8 +5,8 @@ WORKDIR /app
 COPY requirements.txt /app/requirements.txt
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r /app/requirements.txt
-RUN pip install uvicorn
-
+RUN pip install xgboost
+RUN pip install --upgrade mlflow xgboost
 
 COPY ./web_service /app/web_service
 WORKDIR /app/web_service
