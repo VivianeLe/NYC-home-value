@@ -5,6 +5,7 @@ from lib.modeling import  predict_price, train_model, evaluate_model
 from config import PATH_TO_MODEL, PATH_TO_PREPROCESSOR, PATH_TO_TEST, PATH_TO_TRAIN
 from prefect import flow
 import logging
+import mlflow.sklearn
 
 logger = logging.getLogger(__name__)
 
@@ -15,10 +16,10 @@ def train_model_flow(model_type: str = None):
     try:
         model = train_model(x_train=x_train, y_train=y_train, model_type=model_type)
         save_pickle(PATH_TO_MODEL, model)
+        logger.info('Model trained successfully')
     except ValueError as e:
         logger.error(f"An error occurred while training the model: {e}")
         raise
-    logger.info(f"Successfully trained the model: {model_type}")
     return model
 
 @flow(name="Predict and evaluate", retries=3, retry_delay_seconds=10, log_prints=True)
@@ -40,13 +41,27 @@ def predict_model_flow():
 
 @flow(name="Train and predict - main flow", log_prints=True)
 def main_flow(model_type):
-    model = train_model_flow(model_type)
-    rmse, mae, r2 = predict_model_flow()
-    evaluation = f"Model evaluation: RMSE: {rmse} | MAE: {mae} | R2: {r2}"
+    mlflow_experiment_path = f"nyc_house_price_{model_type}"
+    mlflow.set_experiment(mlflow_experiment_path)
+    with mlflow.start_run() as run:
+        run_id = run.info.run_id
+        mlflow.set_tag("stage", "training")
+
+        model = train_model_flow(model_type)
+        mlflow.sklearn.log_model(model, "model")
+        params = model.get_params()
+        mlflow.log_params(params)
+
+        rmse, mae, r2 = predict_model_flow()
+        mlflow.log_metric("Test-MSE", rmse)
+        mlflow.log_metric("Test-MAE", mae)
+        mlflow.log_metric("Test-R2", r2)
+        evaluation = f"Model evaluation: RMSE: {rmse} | MAE: {mae} | R2: {r2}"
+        mlflow.register_model(f"runs:/{run_id}/model", mlflow_experiment_path)
     return evaluation
 
 if __name__ == "__main__":
-    model_type = 'xgb'
+    model_type = 'randomforest'
     main_flow.serve(
         name='NYC House Price Full Deployment',
         version='0.1.0',
@@ -62,3 +77,4 @@ if __name__ == "__main__":
                         )
 
 #uvicorn main:app --reload
+# mlflow ui --host 0.0.0.0 --port 5002

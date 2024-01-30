@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/viviane/Desktop/MLOps/NYC-home-value/web_service/mlruns/260180233249540148/f7ebd7e6a8b149bf89fa6c28ad367060/artifacts
+end_time: 1706652398091
+entry_point_name: ''
+experiment_id: '260180233249540148'
+lifecycle_stage: active
+run_id: f7ebd7e6a8b149bf89fa6c28ad367060
+run_name: peaceful-rook-616
+run_uuid: f7ebd7e6a8b149bf89fa6c28ad367060
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706652382187
+status: 3
+tags: []
+user_id: viviane
