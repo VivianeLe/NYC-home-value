@@ -1,6 +1,6 @@
 from typing import List
 import pandas as pd
-from config import CATEGORICAL_COLS, NUMERICAL_COLS, PATH_TO_PREPROCESSOR
+from config import CATEGORICAL_COLS, NUMERICAL_COLS, PATH_TO_PREPROCESSOR, PATH_TO_TRAIN, PATH_TO_TEST
 from prefect import task
 from lib.helpers import load_data, extract_x_y, save_pickle
 import numpy as np
@@ -41,12 +41,14 @@ def clean_data(df):
     df = df[(df['price'] >=20000) & (df['price'] <=3000000)]
     return df
 
-@task(name="Load, clean, split data")
+# @task(name="Load, clean, split data")
 def load_clean_split(data_path):
     df = load_data(data_path)
     df = clean_data(df)
     df.to_csv("/Users/viviane/Desktop/MLOps/NYC-home-value/data/nyc-house-price-cleaned.csv")
     train_df, test_df = train_test_split(df, test_size=0.2, random_state=42)
+    train_df.to_csv(PATH_TO_TRAIN)
+    test_df.to_csv(PATH_TO_TEST)
     return train_df, test_df
 
 @task(name="Preprocess data")

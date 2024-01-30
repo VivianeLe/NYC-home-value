@@ -6,7 +6,9 @@ COPY requirements.txt /app/requirements.txt
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r /app/requirements.txt
 RUN pip install xgboost
+RUN pip install prefect
 RUN pip install --upgrade mlflow xgboost
+RUN pip install --upgrade pip
 
 COPY ./web_service /app/web_service
 WORKDIR /app/web_service
