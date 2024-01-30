@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/viviane/Desktop/MLOps/NYC-home-value/web_service/mlruns/260180233249540148/9d49b6e3eae44dba8ee687f47db36098/artifacts
+end_time: 1706654711772
+entry_point_name: ''
+experiment_id: '260180233249540148'
+lifecycle_stage: active
+run_id: 9d49b6e3eae44dba8ee687f47db36098
+run_name: marvelous-duck-290
+run_uuid: 9d49b6e3eae44dba8ee687f47db36098
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706654639352
+status: 4
+tags: []
+user_id: viviane
