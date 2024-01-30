@@ -1,5 +1,4 @@
-import pickle
-from prefect import task
+from prefect import task, flow
 import pandas as pd
 import numpy as np
 import xgboost as xgb
