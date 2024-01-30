@@ -8,8 +8,9 @@ from sklearn.feature_extraction import DictVectorizer
 def load_data(path):
     return pd.read_csv(path)
 
+@task
 def load_pickle(path):
-    with open(path, "rb") as f:
+    with open(path, 'rb') as f:
         file = pickle.load(f)
     return file
 
