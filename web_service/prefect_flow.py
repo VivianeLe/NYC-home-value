@@ -2,12 +2,8 @@
 from lib.preprocessing import run_encode_task, load_clean_split
 from lib.helpers import load_data, save_pickle, load_pickle
 from lib.modeling import  predict_price, train_model, evaluate_model
-import numpy as np
-import pandas as pd
-# from sklearn.base import BaseEstimator
-# from sklearn.feature_extraction import DictVectorizer
 from config import PATH_TO_MODEL, PATH_TO_PREPROCESSOR, PATH_TO_TEST, PATH_TO_TRAIN
-from prefect import flow, serve, deploy
+from prefect import flow
 import logging
 
 logger = logging.getLogger(__name__)
@@ -27,7 +23,7 @@ def train_model_flow(model_type: str = None):
 
 @flow(name="Predict and evaluate", retries=3, retry_delay_seconds=10, log_prints=True)
 def predict_model_flow():
-    df = load_data(PATH_TO_TEST)
+    df = load_data(PATH_TO_TRAIN)
     model = load_pickle(PATH_TO_MODEL)
     dv = load_pickle(PATH_TO_PREPROCESSOR)
     x_test, y_test, _ = run_encode_task(df, dv)
