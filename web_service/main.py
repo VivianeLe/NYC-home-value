@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from lib.preprocessing import encode_cols
-from lib.modeling import load_pickle
+from lib.helpers import load_pickle
 from sklearn.feature_extraction import DictVectorizer
 from typing import List
 import numpy as np
@@ -9,6 +9,7 @@ import pandas as pd
 from sklearn.base import BaseEstimator
 from config import PATH_TO_PREPROCESSOR, PATH_TO_MODEL
 import logging
+from prefect import flow
 
 logger = logging.getLogger(__name__)
 
@@ -22,6 +23,7 @@ class InputData(BaseModel):
     square_feet: float
     house_age: float
 
+@flow(name="Predict instance")
 def run_inference(user_input: List[InputData], dv: DictVectorizer, model: BaseEstimator) -> np.ndarray:
     df = pd.DataFrame([x.dict() for x in user_input])
     df = encode_cols(df)
@@ -36,6 +38,7 @@ def read_root():
     return {"message": "This is NYC House Price Prediction App"}
 
 @app.post("/predict_house_price")
+@flow
 def predict_house_price(payload: InputData):
     dv = load_pickle(PATH_TO_PREPROCESSOR)
     model = load_pickle(PATH_TO_MODEL)

@@ -1,7 +1,9 @@
 from typing import List
 import pandas as pd
 from config import CATEGORICAL_COLS, NUMERICAL_COLS
+from prefect import task
 
+@task
 def encode_cols(df: pd.DataFrame, categorical_cols: List[str] = None, numerical_cols: List[str] = None) -> pd.DataFrame:
     if categorical_cols is None:
         categorical_cols = CATEGORICAL_COLS
