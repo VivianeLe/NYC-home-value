@@ -46,4 +46,7 @@ def predict_house_price(payload: InputData):
     result = f"Predicted house price: {round(y[0]):,.0f} USD"
     return {result}
 
+# Run FastAPI
 #uvicorn main:app --reload
+#check MLflow
+# mlflow ui --host 0.0.0.0 --port 5002
