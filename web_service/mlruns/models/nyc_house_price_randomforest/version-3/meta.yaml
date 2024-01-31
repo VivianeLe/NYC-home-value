@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1706691016538
+current_stage: None
+description: null
+last_updated_timestamp: 1706691016538
+name: nyc_house_price_randomforest
+run_id: 6562e50d0d6f4941920bf6603019d9e4
+run_link: null
+source: file:///Users/viviane/Desktop/MLOps/NYC-home-value/web_service/mlruns/260180233249540148/6562e50d0d6f4941920bf6603019d9e4/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///Users/viviane/Desktop/MLOps/NYC-home-value/web_service/mlruns/260180233249540148/6562e50d0d6f4941920bf6603019d9e4/artifacts/model
+user_id: null
+version: 3

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/viviane/Desktop/MLOps/NYC-home-value/web_service/mlruns/213668809354869179/27fc1bcf7a87480ab1e25d897bb692be/artifacts
+end_time: 1706691523385
+entry_point_name: ''
+experiment_id: '213668809354869179'
+lifecycle_stage: active
+run_id: 27fc1bcf7a87480ab1e25d897bb692be
+run_name: merciful-donkey-772
+run_uuid: 27fc1bcf7a87480ab1e25d897bb692be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706691506526
+status: 3
+tags: []
+user_id: viviane

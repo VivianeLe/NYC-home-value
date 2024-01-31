@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1706652117035
+current_stage: None
+description: null
+last_updated_timestamp: 1706652117035
+name: nyc_house_price_xgb
+run_id: 5c4f40c86f88467c8f45c6951e682ecb
+run_link: null
+source: file:///Users/viviane/Desktop/MLOps/NYC-home-value/web_service/mlruns/213668809354869179/5c4f40c86f88467c8f45c6951e682ecb/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///Users/viviane/Desktop/MLOps/NYC-home-value/web_service/mlruns/213668809354869179/5c4f40c86f88467c8f45c6951e682ecb/artifacts/model
+user_id: null
+version: 1

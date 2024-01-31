@@ -11,6 +11,7 @@ RUN pip install --upgrade mlflow xgboost
 RUN pip install --upgrade pip
 
 COPY ./web_service /app/web_service
+COPY ./data /app/web_service/data
 WORKDIR /app/web_service
 
 # Make port 8001 available to the world outside this container

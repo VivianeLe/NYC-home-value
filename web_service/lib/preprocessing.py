@@ -41,7 +41,7 @@ def clean_data(df):
     df = df[(df['price'] >=20000) & (df['price'] <=3000000)]
     return df
 
-# @task(name="Load, clean, split data")
+@task(name="Load, clean, split data")
 def load_clean_split(data_path):
     df = load_data(data_path)
     df = clean_data(df)
@@ -55,5 +55,4 @@ def load_clean_split(data_path):
 def run_encode_task(df, dv: DictVectorizer = None) -> np.ndarray:
     df = encode_cols(df)
     x, y, dv = extract_x_y(df, CATEGORICAL_COLS, NUMERICAL_COLS, dv)
-    save_pickle(PATH_TO_PREPROCESSOR, dv)
     return x, y, dv

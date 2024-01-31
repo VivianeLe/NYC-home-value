@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/viviane/Desktop/MLOps/NYC-home-value/web_service/mlruns/213668809354869179/5c4f40c86f88467c8f45c6951e682ecb/artifacts
+end_time: 1706652117038
+entry_point_name: ''
+experiment_id: '213668809354869179'
+lifecycle_stage: active
+run_id: 5c4f40c86f88467c8f45c6951e682ecb
+run_name: gaudy-mouse-535
+run_uuid: 5c4f40c86f88467c8f45c6951e682ecb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706652100477
+status: 3
+tags: []
+user_id: viviane

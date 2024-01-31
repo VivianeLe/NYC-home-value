@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/viviane/Desktop/MLOps/NYC-home-value/web_service/mlruns/260180233249540148/6562e50d0d6f4941920bf6603019d9e4/artifacts
+end_time: 1706691016548
+entry_point_name: ''
+experiment_id: '260180233249540148'
+lifecycle_stage: active
+run_id: 6562e50d0d6f4941920bf6603019d9e4
+run_name: silent-mink-248
+run_uuid: 6562e50d0d6f4941920bf6603019d9e4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706690985426
+status: 3
+tags: []
+user_id: viviane
