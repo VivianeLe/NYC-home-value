@@ -82,5 +82,6 @@ if __name__ == "__main__":
                         interval=600
                         )
 
+
 #uvicorn main:app --reload
-# mlflow ui --host 0.0.0.0 --port 5002
+#mlflow ui --host 0.0.0.0 --port 5002

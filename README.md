@@ -33,22 +33,26 @@ min	10001.000000	1.000000	1.200000e+02	1.000000	2.000000e+04
 75%	11361.500000	2.394866	4.256918e+03	92.000000	9.280000e+05
 max	11694.000000	2261.000000	3.750565e+06	217.000000	3.000000e+06
 
-2. Build functions
+2. Data visualization
+Build dashboard on Looker:
+Link to dashboard: https://shorturl.at/abwLT
 
-3. Run MLFlow
+3. Build functions
+
+4. Run MLFlow
 From your terminal, run: 
 mlflow ui --host 0.0.0.0 --port 5002
 
-3. Run FastAPI:
+5. Run FastAPI:
 From your terminal, go to the directory that contain main.py file, run:
 unicorn main:app —reload
 
-4. Run Docker:
+6. Run Docker:
 Build an image name house-predict on docker
 From your terminal, run:
 docker run -p 0.0.0.0:8000:8001 house-predict
 
-5. Run Prefect:
+7. Run Prefect:
 Asign @task and @flow for the functions. There are 2 flows in main_flow: train_flow and predict_flow
 From your terminal, go to the directory that contains prefect_flow.py file, run:
 python -i prefect_flow.py

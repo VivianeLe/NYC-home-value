@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/viviane/Desktop/MLOps/NYC-home-value/web_service/mlruns/213668809354869179/9daa37b3eb8e45868d3fe7376f5229eb/artifacts
+end_time: 1706720963551
+entry_point_name: ''
+experiment_id: '213668809354869179'
+lifecycle_stage: active
+run_id: 9daa37b3eb8e45868d3fe7376f5229eb
+run_name: whimsical-loon-898
+run_uuid: 9daa37b3eb8e45868d3fe7376f5229eb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706720941746
+status: 3
+tags: []
+user_id: viviane
