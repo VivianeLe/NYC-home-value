@@ -65,7 +65,7 @@ def main_flow(data_path, model_type):
     return evaluation
 
 if __name__ == "__main__":
-    model_type = 'randomforest'
+    model_type = 'xgb'
     data_path = '/Users/viviane/Desktop/MLOps/NYC-home-value/data/nyc-rolling-sales.csv'
     main_flow.serve(
         name='NYC House Price Full Deployment',

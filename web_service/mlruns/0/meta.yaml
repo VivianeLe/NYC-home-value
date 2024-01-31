@@ -1,0 +1,6 @@
+artifact_location: file:///Users/viviane/Desktop/MLOps/NYC-home-value/web_service/mlruns/260180233249540148
+creation_time: 1706652382045
+experiment_id: '260180233249540148'
+last_update_time: 1706652382045
+lifecycle_stage: active
+name: nyc_house_price_randomforest
